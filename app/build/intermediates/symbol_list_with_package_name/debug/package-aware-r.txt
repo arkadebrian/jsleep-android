@@ -2450,6 +2450,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_add_box_24
+drawable ic_baseline_person_outline_24
+drawable ic_baseline_search_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2509,10 +2512,17 @@ drawable tooltip_frame_light
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BalanceCategory
+id BalanceData
+id BalanceShower
 id CTRL
+id EmailCategory
+id EmailData
 id FUNCTION
 id META
 id NO_DEBUG
+id NameCategory
+id NameData
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2554,6 +2564,8 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountDetails
+id account_button
 id actionDown
 id actionDownUp
 id actionUp
@@ -2577,6 +2589,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_button
 id alertTitle
 id aligned
 id all
@@ -2704,10 +2717,10 @@ id fragment_container_view_tag
 id frost
 id ghost_view
 id ghost_view_holder
+id go
 id gone
 id graph
 id graph_wrap
-id greetings
 id group_divider
 id grouping
 id groups
@@ -2745,7 +2758,9 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
+id listViewer
 id list_item
 id loginButton
 id masked
@@ -2815,6 +2830,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id next
 id noScroll
 id noState
 id none
@@ -2823,6 +2839,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id numberlist
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -2845,6 +2862,7 @@ id percent
 id pin
 id position
 id postLayout
+id prev
 id progress_circular
 id progress_horizontal
 id radio
@@ -3080,6 +3098,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_about_me
 layout activity_login
 layout activity_main
 layout activity_register
@@ -3172,6 +3191,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu example_menu
 menu example_menu2
+menu top_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

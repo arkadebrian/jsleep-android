@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B61D5"
+    android:backgroundTint="#4A36A1"
+    tools:context=".AboutMeActivity">
+
+    <TextView
+        android:id="@+id/accountDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Account Details"
+        android:textColor="#CCCCCC"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/NameCategory"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:fontFamily="serif"
+        android:text="Name"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/NameData"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Arka Brian D"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+
+    <TextView
+        android:id="@+id/EmailCategory"
+        android:layout_width="81dp"
+        android:layout_height="39dp"
+        android:fontFamily="serif"
+        android:text="Email"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <TextView
+        android:id="@+id/EmailData"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="arka.brian@ui.ac.id"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <TextView
+        android:id="@+id/BalanceCategory"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:fontFamily="serif"
+        android:text="Balance"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <TextView
+        android:id="@+id/BalanceData"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="69.0"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <EditText
+        android:id="@+id/BalanceShower"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#CCCCCC"
+        android:ems="15"
+        android:fontFamily="serif"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <Button
+        android:layout_width="122dp"
+        android:layout_height="61dp"
+        android:text="TOP UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+        android:id="@+id/titleJsleepKecil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="JSleep"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
