@@ -62,6 +62,10 @@ INJECTED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Prakti
 		INJECTED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:5:5-49:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\598c05c81fe9254b4832878dd4a0db6b\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
