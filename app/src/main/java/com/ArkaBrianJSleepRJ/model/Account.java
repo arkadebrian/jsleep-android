@@ -18,7 +18,7 @@ public Account(int id, String name, String password, Renter renter, String email
 
     @Override
     public String toString() {
-        return "\nAccount{\n" +
+        return "Account{\n" +
                 "\tbalance ='" + this.balance + '\n' +
                 "\temail ='" + this.email + '\n' +
                 "\tname ='" + this.name + '\n' +

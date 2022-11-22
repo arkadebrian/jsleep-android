@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.ArkaBrianJSleepRJ.model.Account;
 import com.ArkaBrianJSleepRJ.model.Room;
 import com.google.gson.Gson;
 
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
+    public static Account accountGas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
