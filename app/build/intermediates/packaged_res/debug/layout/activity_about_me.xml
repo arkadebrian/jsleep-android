@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#5B61D5"
     android:backgroundTint="#4A36A1"
+    app:layoutDescription="@xml/activity_about_me_scene"
     tools:context=".AboutMeActivity">
 
     <TextView
@@ -21,6 +23,66 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/NameData"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/renterNameData"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/renterAddressData"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/renterPhoneData"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
 
     <TextView
         android:id="@+id/NameCategory"
@@ -39,7 +101,23 @@
         app:layout_constraintVertical_bias="0.401" />
 
     <TextView
-        android:id="@+id/NameData"
+        android:id="@+id/renterName"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:fontFamily="serif"
+        android:text="Name"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <TextView
+        android:id="@+id/EmailData"
         android:layout_width="wrap_content"
         android:layout_height="29dp"
         android:fontFamily="serif"
@@ -48,11 +126,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
-
+        app:layout_constraintVertical_bias="0.471" />
 
     <TextView
         android:id="@+id/EmailCategory"
@@ -71,19 +148,20 @@
         app:layout_constraintVertical_bias="0.478" />
 
     <TextView
-        android:id="@+id/EmailData"
-        android:layout_width="wrap_content"
-        android:layout_height="29dp"
+        android:id="@+id/renterAddress"
+        android:layout_width="81dp"
+        android:layout_height="39dp"
         android:fontFamily="serif"
-        android:gravity="center_horizontal"
+        android:text="Address"
+        android:textAlignment="textStart"
         android:textColor="#CCCCCC"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.478" />
 
     <TextView
         android:id="@+id/BalanceCategory"
@@ -91,6 +169,22 @@
         android:layout_height="39dp"
         android:fontFamily="serif"
         android:text="Balance"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <TextView
+        android:id="@+id/renterPhone"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:fontFamily="serif"
+        android:text="Phone Number"
         android:textAlignment="textStart"
         android:textColor="#CCCCCC"
         android:textSize="20sp"
@@ -135,10 +229,104 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.646" />
 
+    <EditText
+        android:id="@+id/renterNameInput"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#CCCCCC"
+        android:ems="15"
+        android:fontFamily="serif"
+        android:hint="Name"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <EditText
+        android:id="@+id/renterPhoneInput"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#CCCCCC"
+        android:ems="15"
+        android:fontFamily="serif"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <EditText
+        android:id="@+id/renterAddressInput"
+        android:layout_width="168dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#CCCCCC"
+        android:ems="15"
+        android:fontFamily="serif"
+        android:hint="Address"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColor="#CCCCCC"
+        android:textColorHint="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
     <Button
+        android:id="@+id/registerRenter"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:text="Register Renter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <Button
+        android:id="@+id/topUpButton"
         android:layout_width="122dp"
         android:layout_height="61dp"
         android:text="TOP UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <Button
+        android:id="@+id/jadiRegisterRenter"
+        android:layout_width="122dp"
+        android:layout_height="61dp"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <Button
+        android:id="@+id/cancelRegister"
+        android:layout_width="122dp"
+        android:layout_height="61dp"
+        android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
@@ -161,4 +349,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.828" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

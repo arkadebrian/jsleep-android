@@ -54,31 +54,11 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-//    protected Account requestAccount(){
-//        mApiService.getAccount(0).enqueue(new Callback<Account>() {
-//            @Override
-//            public void onResponse(Call<Account> call, Response<Account> response) {
-//                if (response.isSuccessful()){
-//                    Account account;
-//                    account = response.body();
-//                    System.out.println(account.toString());
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Account> call, Throwable t) {
-//                Toast.makeText(mContext, "no Account id=0", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//        return null;
-//    }
-
     protected Account requestLogin(String email, String password){
         mApiService.login(email, password).enqueue(new Callback<Account>() {
             @Override
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if (response.isSuccessful()){
-
                     MainActivity.accountGas = response.body();
                     System.out.println(MainActivity.accountGas.toString());
                     Toast.makeText(mContext, "Hai Ganteng", Toast.LENGTH_SHORT).show();

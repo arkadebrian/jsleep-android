@@ -2606,6 +2606,8 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id balanceCategory2
+id balanceShower2
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2617,9 +2619,14 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button
+id button2
+id button6
 id buttonPanel
 id cache_measures
 id callMeasure
+id cancelCreateRoomButton
+id cancelRegister
 id cancel_button
 id carryVelocity
 id center
@@ -2654,6 +2661,7 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id createRoomButton
 id currentState
 id custom
 id customPanel
@@ -2687,6 +2695,8 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id dropdownBed
+id dropdownCity
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -2694,15 +2704,25 @@ id easeOut
 id east
 id edit_query
 id elastic
+id emailCategory2
 id emailInputLogin
 id emailInputRegister
 id end
 id endToStart
+id end_c
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id facilityACinclude
+id facilityBalconyInclude
+id facilityBathtubInclude
+id facilityFridgeInclude
+id facilityGymInclude
+id facilityRestaurantInclude
+id facilitySwimmingPoolInclude
+id facilityWifiInclude
 id fade
 id fill
 id fill_horizontal
@@ -2748,6 +2768,8 @@ id item2
 id item3
 id item4
 id item_touch_helper_previous_elevation
+id jadiRegisterRenter
+id jadiRegisterRenter2
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2794,6 +2816,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id motionLayout
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -2819,6 +2842,9 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameCategory2
+id nameCategory3
+id nameData2
 id nameInputRegister
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -2870,11 +2896,28 @@ id ratio
 id rectangles
 id registerButton
 id registerNow
+id registerRenter
+id renterAddress
+id renterAddressData
+id renterAddressData2
+id renterAddressInput
+id renterAddressInput2
+id renterName
+id renterNameData
+id renterNameData3
+id renterNameInput
+id renterNameInput2
+id renterPhone
+id renterPhoneData
+id renterPhoneInput
+id renterSizeInput
 id reverseSawtooth
 id right
 id rightToLeft
 id right_icon
 id right_side
+id roomNameInput
+id roomPriceInput
 id rounded
 id row_index_key
 id save_non_transition_alpha
@@ -2974,7 +3017,11 @@ id textinput_prefix_text
 id textinput_suffix_text
 id time
 id title
+id titleBedType
+id titleCity
+id titleCreateRoom
 id titleDividerNoCustom
+id titleFacility
 id titleJsleep
 id titleJsleepKecil
 id titleRegisterYourself
@@ -2982,6 +3029,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id topUpButton
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3102,6 +3150,7 @@ layout activity_about_me
 layout activity_login
 layout activity_main
 layout activity_register
+layout activity_room
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4496,6 +4545,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml activity_about_me_scene
 xml backup_rules
 xml data_extraction_rules
 xml network_security_config

@@ -51,11 +51,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent aboutMeIntent = new Intent(MainActivity.this,AboutMeActivity.class);
         if (item.getItemId() == R.id.account_button) {
+            Intent aboutMeIntent = new Intent(MainActivity.this,AboutMeActivity.class);
             Toast.makeText(this, "About me", Toast.LENGTH_SHORT).show();
             startActivity(aboutMeIntent);
             return true;
+        }
+        //If add button were pressed
+        else if(item.getItemId() == R.id.add_button){
+            Intent roomIntent = new Intent(MainActivity.this,RoomActivity.class);
+            Toast.makeText(this, "Create Room", Toast.LENGTH_SHORT).show();
+            startActivity(roomIntent);
         }
         return super.onOptionsItemSelected(item);
 

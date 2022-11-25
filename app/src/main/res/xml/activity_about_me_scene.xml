@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/accountDetails"
+               motion:framePosition="100"
+               android:translationY="30dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/registerRenter"
+               motion:framePosition="100"
+               android:alpha="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/registerRenter"
+               motion:framePosition="100"
+               android:scaleX="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/registerRenter"
+               motion:framePosition="100"
+               android:scaleY="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/renterNameInput"
+               motion:framePosition="100"
+               android:alpha="1"
+               android:scaleX="1"
+               android:scaleY="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/renterPhoneInput"
+               motion:framePosition="0"
+               android:alpha="1"
+               android:scaleX="1"
+               android:scaleY="1" />
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/registerRenter" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            motion:layout_constraintVertical_bias="0.744"
+            android:layout_height="57dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="285dp"
+            android:id="@+id/button" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.744"
+            android:layout_height="58dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.495"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="310dp"
+            android:id="@+id/registerRenter" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.101"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.205"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterAddressInput"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:alpha="0"
+            android:visibility="gone" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.01"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.205"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterNameInput"
+            android:scaleX="0"
+            android:alpha="0"
+            android:visibility="gone" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.19"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.205"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterPhoneInput"
+            android:visibility="gone"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:alpha="0" />
+        <Constraint
+            motion:layout_constraintVertical_bias="1.0"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.204"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/jadiRegisterRenter"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:alpha="0"
+            android:visibility="gone" />
+        <Constraint
+            motion:layout_constraintVertical_bias="1.0"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.823"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/jadiRegisterRenter2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="1.0"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.823"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/cancelRegister"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:alpha="0"
+            android:visibility="gone" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.311"
+            android:layout_height="38dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.349"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="85dp"
+            android:id="@+id/renterName"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/renterAddress"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="81dp"
+            android:layout_height="39dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.478"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.175"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.911"
+            android:layout_height="41dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.214"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="162dp"
+            android:id="@+id/renterPhone"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/renterNameData"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.401"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.821"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/renterAddressData"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.401"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.821"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone" />
+        <Constraint
+            android:id="@+id/renterPhoneData"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.401"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintHorizontal_bias="0.821"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            motion:layout_constraintVertical_bias="0.023"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/accountDetails" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.977"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/titleJsleepKecil" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.152"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.805"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/NameData" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.148"
+            android:layout_height="38dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.156"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="85dp"
+            android:id="@+id/NameCategory" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.229"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.751"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/EmailData" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.232"
+            android:layout_height="39dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.154"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="81dp"
+            android:id="@+id/EmailCategory" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.315"
+            android:layout_height="39dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.16"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="94dp"
+            android:id="@+id/BalanceCategory" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.311"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.836"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/BalanceData" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.405"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/BalanceShower" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.404"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.799"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/button" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.404"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.823"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/button2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.499"
+            android:layout_height="58dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.504"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="310dp"
+            android:id="@+id/registerRenter"
+            android:visibility="invisible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.555"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/balanceShower2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.536"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterNameInput"
+            android:visibility="visible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.657"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterNameInput2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.646"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterAddressInput"
+            android:visibility="visible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.643"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterAddressInput2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.752"
+            android:layout_height="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterPhoneInput"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:visibility="visible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.864"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.176"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/button6" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.876"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.176"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/jadiRegisterRenter" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.876"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.826"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/cancelRegister" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.404"
+            android:layout_height="61dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.809"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/topUpButton" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.535"
+            android:layout_height="38dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.156"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="85dp"
+            android:id="@+id/nameCategory2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.536"
+            android:layout_height="38dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.156"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="85dp"
+            android:id="@+id/renterName"
+            android:visibility="invisible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.647"
+            android:layout_height="39dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.166"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="81dp"
+            android:id="@+id/emailCategory2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.645"
+            android:layout_height="39dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.154"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="81dp"
+            android:id="@+id/renterAddress"
+            android:visibility="invisible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.75"
+            android:layout_height="39dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.16"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="94dp"
+            android:id="@+id/balanceCategory2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.744"
+            android:layout_height="34dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.199"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="155dp"
+            android:id="@+id/renterPhone"
+            android:visibility="invisible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.536"
+            android:layout_height="38dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.846"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="85dp"
+            android:id="@+id/nameCategory3" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.636"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.878"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/nameData2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.529"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.878"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/renterNameData"
+            android:visibility="invisible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.636"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.878"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/renterNameData3" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.636"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.878"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/renterAddressData"
+            android:visibility="invisible" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.739"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.878"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/renterAddressData2" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.739"
+            android:layout_height="29dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.878"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/renterPhoneData"
+            android:visibility="invisible" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end_c" >
+        <Constraint
+            motion:layout_constraintVertical_bias="0.023"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/accountDetails"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.977"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/titleJsleepKecil"
+            android:layout_height="wrap_content"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.152"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/NameData"
+            android:layout_height="29dp"
+            motion:layout_constraintHorizontal_bias="0.805"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.148"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="85dp"
+            android:id="@+id/NameCategory"
+            android:layout_height="38dp"
+            motion:layout_constraintHorizontal_bias="0.156"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.229"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/EmailData"
+            android:layout_height="29dp"
+            motion:layout_constraintHorizontal_bias="0.751"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.232"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="81dp"
+            android:id="@+id/EmailCategory"
+            android:layout_height="39dp"
+            motion:layout_constraintHorizontal_bias="0.154"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.315"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="94dp"
+            android:id="@+id/BalanceCategory"
+            android:layout_height="39dp"
+            motion:layout_constraintHorizontal_bias="0.16"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.311"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/BalanceData"
+            android:layout_height="29dp"
+            motion:layout_constraintHorizontal_bias="0.836"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.405"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/BalanceShower"
+            android:layout_height="60dp"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.404"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/button"
+            android:layout_height="61dp"
+            motion:layout_constraintHorizontal_bias="0.799"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.404"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/button2"
+            android:layout_height="61dp"
+            motion:layout_constraintHorizontal_bias="0.823"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.499"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="310dp"
+            android:id="@+id/registerRenter"
+            android:layout_height="58dp"
+            motion:layout_constraintHorizontal_bias="0.504"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.555"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/balanceShower2"
+            android:layout_height="60dp"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.536"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterNameInput"
+            android:layout_height="60dp"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.657"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterNameInput2"
+            android:layout_height="60dp"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.646"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterAddressInput"
+            android:layout_height="60dp"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.643"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:id="@+id/renterAddressInput2"
+            android:layout_height="60dp"
+            motion:layout_constraintHorizontal_bias="0.209"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.752"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="168dp"
+            android:scaleX="1"
+            android:id="@+id/renterPhoneInput"
+            android:layout_height="60dp"
+            motion:layout_constraintHorizontal_bias="0.209"
+            android:scaleY="1"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.864"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/button6"
+            android:layout_height="61dp"
+            motion:layout_constraintHorizontal_bias="0.176"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.876"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/jadiRegisterRenter"
+            android:layout_height="61dp"
+            motion:layout_constraintHorizontal_bias="0.176"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.876"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/cancelRegister"
+            android:layout_height="61dp"
+            motion:layout_constraintHorizontal_bias="0.826"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.404"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="122dp"
+            android:id="@+id/topUpButton"
+            android:layout_height="61dp"
+            motion:layout_constraintHorizontal_bias="0.809"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.535"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="85dp"
+            android:id="@+id/nameCategory2"
+            android:layout_height="38dp"
+            motion:layout_constraintHorizontal_bias="0.156"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+</MotionScene>
