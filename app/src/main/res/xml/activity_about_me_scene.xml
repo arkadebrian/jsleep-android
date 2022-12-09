@@ -573,7 +573,7 @@
     </ConstraintSet>
     <ConstraintSet android:id="@+id/end_c" >
         <Constraint
-            motion:layout_constraintVertical_bias="0.023"
+            motion:layout_constraintVertical_bias="0.067"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:id="@+id/accountDetails"

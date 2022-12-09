@@ -18,17 +18,17 @@ public class Room extends Serializable{
             int id,
             int accountId,
             String name,
-            ArrayList<Date> booked,
-            String address,
-            Price price, City city,
             int size,
-            BedType bedType,
-            ArrayList<Facility> facility
+            Price price,
+            ArrayList<Facility> facility,
+            City city,
+            String address,
+            BedType bedType
     ) {
         super(id);
         this.accountId = accountId;
         this.name = name;
-        this.booked = booked;
+        this.booked = new ArrayList<>();
         this.address = address;
         this.price = price;
         this.city = city;

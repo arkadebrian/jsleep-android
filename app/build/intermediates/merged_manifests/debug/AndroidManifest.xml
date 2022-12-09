@@ -23,7 +23,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.Jsleepandroid" >
         <activity
-            android:name="com.ArkaBrianJSleepRJ.RoomActivity"
+            android:name="com.ArkaBrianJSleepRJ.PaymentActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.ArkaBrianJSleepRJ.RoomDetailsActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.ArkaBrianJSleepRJ.CreateRoomActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

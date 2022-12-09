@@ -9,4 +9,8 @@ public class Price {
         this.price = price;
     }
 
+    public Price(double price) {
+        this.discount = 0;
+        this.price = price;
+    }
 }

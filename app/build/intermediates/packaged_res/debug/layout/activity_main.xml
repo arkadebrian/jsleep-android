@@ -41,7 +41,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/numberlist"
+            android:id="@+id/pageInput"
             android:layout_width="180dp"
             android:layout_height="65dp"
             android:layout_weight="1"

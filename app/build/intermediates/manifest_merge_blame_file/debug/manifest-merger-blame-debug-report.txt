@@ -15,7 +15,7 @@
 11-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:7:5-58:19
+13-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:7:5-72:19
 14        android:allowBackup="true"
 14-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -38,8 +38,8 @@
 24-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:15:9-51
 25        <activity
 25-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:17:9-23:20
-26            android:name="com.ArkaBrianJSleepRJ.RoomActivity"
-26-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:18:13-41
+26            android:name="com.ArkaBrianJSleepRJ.PaymentActivity"
+26-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:18:13-44
 27            android:exported="false" >
 27-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:19:13-37
 28            <meta-data
@@ -51,8 +51,8 @@
 31        </activity>
 32        <activity
 32-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:24:9-30:20
-33            android:name="com.ArkaBrianJSleepRJ.AboutMeActivity"
-33-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:25:13-44
+33            android:name="com.ArkaBrianJSleepRJ.RoomDetailsActivity"
+33-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:25:13-48
 34            android:exported="false" >
 34-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:26:13-37
 35            <meta-data
@@ -64,8 +64,8 @@
 38        </activity>
 39        <activity
 39-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:31:9-37:20
-40            android:name="com.ArkaBrianJSleepRJ.MainActivity"
-40-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:32:13-41
+40            android:name="com.ArkaBrianJSleepRJ.CreateRoomActivity"
+40-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:32:13-47
 41            android:exported="false" >
 41-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:33:13-37
 42            <meta-data
@@ -77,8 +77,8 @@
 45        </activity>
 46        <activity
 46-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:38:9-44:20
-47            android:name="com.ArkaBrianJSleepRJ.RegisterActivity"
-47-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:39:13-45
+47            android:name="com.ArkaBrianJSleepRJ.AboutMeActivity"
+47-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:39:13-44
 48            android:exported="false" >
 48-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:40:13-37
 49            <meta-data
@@ -89,51 +89,77 @@
 51-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:22:17-33
 52        </activity>
 53        <activity
-53-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:45:9-57:20
-54            android:name="com.ArkaBrianJSleepRJ.LoginActivity"
-54-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:46:13-42
-55            android:exported="true" >
-55-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:47:13-36
-56            <intent-filter>
-56-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:48:13-52:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:49:17-69
-57-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:49:25-66
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:51:17-77
-59-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:51:27-74
-60            </intent-filter>
-61
-62            <meta-data
-62-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:20:13-22:36
-63                android:name="android.app.lib_name"
-63-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:21:17-52
-64                android:value="" />
-64-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:22:17-33
-65        </activity>
-66
-67        <provider
-67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-68            android:name="androidx.startup.InitializationProvider"
-68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-69            android:authorities="com.ArkaBrianJSleepRJ.androidx-startup"
-69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-70            android:exported="false" >
-70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-71            <meta-data
-71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-73                android:value="androidx.startup" />
-73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-74            <meta-data
-74-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\dd1064e81b3445eb173cd45521bfd469\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-75-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\dd1064e81b3445eb173cd45521bfd469\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-76                android:value="androidx.startup" />
-76-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\dd1064e81b3445eb173cd45521bfd469\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-77        </provider>
-78    </application>
-79
-80</manifest>
+53-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:45:9-51:20
+54            android:name="com.ArkaBrianJSleepRJ.MainActivity"
+54-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:46:13-41
+55            android:exported="false" >
+55-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:47:13-37
+56            <meta-data
+56-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:20:13-22:36
+57                android:name="android.app.lib_name"
+57-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:21:17-52
+58                android:value="" />
+58-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:22:17-33
+59        </activity>
+60        <activity
+60-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:52:9-58:20
+61            android:name="com.ArkaBrianJSleepRJ.RegisterActivity"
+61-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:53:13-45
+62            android:exported="false" >
+62-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:54:13-37
+63            <meta-data
+63-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:20:13-22:36
+64                android:name="android.app.lib_name"
+64-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:21:17-52
+65                android:value="" />
+65-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:22:17-33
+66        </activity>
+67        <activity
+67-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:59:9-71:20
+68            android:name="com.ArkaBrianJSleepRJ.LoginActivity"
+68-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:60:13-42
+69            android:exported="true" >
+69-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:61:13-36
+70            <intent-filter>
+70-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:62:13-66:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:63:17-69
+71-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:63:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:65:17-77
+73-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:65:27-74
+74            </intent-filter>
+75
+76            <meta-data
+76-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:20:13-22:36
+77                android:name="android.app.lib_name"
+77-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:21:17-52
+78                android:value="" />
+78-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:22:17-33
+79        </activity>
+80
+81        <provider
+81-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+82            android:name="androidx.startup.InitializationProvider"
+82-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+83            android:authorities="com.ArkaBrianJSleepRJ.androidx-startup"
+83-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+84            android:exported="false" >
+84-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+85            <meta-data
+85-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+86                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+86-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+87                android:value="androidx.startup" />
+87-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\4b580972190c9e236a669c6a1f1f8a9e\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+88            <meta-data
+88-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\dd1064e81b3445eb173cd45521bfd469\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+89                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+89-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\dd1064e81b3445eb173cd45521bfd469\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+90                android:value="androidx.startup" />
+90-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Arka Brian\.gradle\caches\transforms-3\dd1064e81b3445eb173cd45521bfd469\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+91        </provider>
+92    </application>
+93
+94</manifest>

@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ArkaBrianJSleepRJ.model.Account;
 import com.ArkaBrianJSleepRJ.model.Renter;
 import com.ArkaBrianJSleepRJ.request.BaseApiService;
 import com.ArkaBrianJSleepRJ.request.UtilsApi;
@@ -35,6 +36,8 @@ public class AboutMeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
+        mApiService = UtilsApi.getAPIService();
+        mContext = this;
 
         Button jadiRenter = findViewById(R.id.jadiRegisterRenter);
         Button gaJadi = findViewById(R.id.cancelRegister);
@@ -51,41 +54,20 @@ public class AboutMeActivity extends AppCompatActivity {
         username.setText(MainActivity.accountGas.email);
         balance.setText(String.valueOf(MainActivity.accountGas.balance));
 
-        renterNameRegistered.setText(MainActivity.accountGas.renter.username);
-        renterAddressRegistered.setText(MainActivity.accountGas.renter.address);
-        renterPhoneRegistered.setText(MainActivity.accountGas.renter.phoneNumber);
-
         renterName = findViewById(R.id.renterNameInput);
         renterAddress = findViewById(R.id.renterAddressInput);
         renterPhone = findViewById(R.id.renterPhoneInput);
 
-        jadiRenter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(renterName.getText().toString().equals("") || renterAddress.getText().toString().equals("") || renterPhone.getText().toString().equals("")) {
-                    Toast.makeText(mContext, "Please fill all the fields", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Renter renter = requestRenter(MainActivity.accountGas.id, renterName.getText().toString(), renterAddress.getText().toString(), renterPhone.getText().toString());
-                }
-
-            }
-        });
-
-        gaJadi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ((MotionLayout)findViewById(R.id.motionLayout)).transitionToStart();
-            }
-        });
-
         if(MainActivity.accountGas.renter != null){
-            gaJadi.setVisibility(View.GONE);
-            jadiRenter.setVisibility(View.GONE);
+            ((MotionLayout)findViewById(R.id.motionLayout)).transitionToEnd();
+            gaJadi.setVisibility(View.INVISIBLE);
+            jadiRenter.setVisibility(View.INVISIBLE);
             renterName.setVisibility(View.GONE);
             renterAddress.setVisibility(View.GONE);
             renterPhone.setVisibility(View.GONE);
-            ((MotionLayout)findViewById(R.id.motionLayout)).transitionToEnd();
+            renterNameRegistered.setText(MainActivity.accountGas.renter.username);
+            renterAddressRegistered.setText(MainActivity.accountGas.renter.address);
+            renterPhoneRegistered.setText(MainActivity.accountGas.renter.phoneNumber);
             findViewById(R.id.renterName).setVisibility(View.VISIBLE);
             findViewById(R.id.renterAddress).setVisibility(View.VISIBLE);
             findViewById(R.id.renterPhone).setVisibility(View.VISIBLE);
@@ -93,10 +75,32 @@ public class AboutMeActivity extends AppCompatActivity {
             renterAddressRegistered.setVisibility(View.VISIBLE);
             renterPhoneRegistered.setVisibility(View.VISIBLE);
         }
+        else{
+            jadiRenter.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(renterName.getText().toString().equals("") || renterAddress.getText().toString().equals("") || renterPhone.getText().toString().equals("")) {
+                        Toast.makeText(mContext, "Please fill all the fields", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        Renter renter = requestRenter(renterName.getText().toString(), renterAddress.getText().toString(), renterPhone.getText().toString());
+                    }
+
+                }
+            });
+
+            gaJadi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ((MotionLayout)findViewById(R.id.motionLayout)).transitionToStart();
+                }
+            });
+        }
 
     }
 
-    protected Renter requestRenter(int id, String name, String address, String phone){
+    protected Renter requestRenter(String name, String address, String phone){
+
         mApiService.registerRenter(MainActivity.accountGas.id, name, address, phone).enqueue(new Callback<Renter>() {
             @Override
             public void onResponse(Call<Renter> call, Response<Renter> response) {

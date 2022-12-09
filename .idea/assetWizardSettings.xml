@@ -69,6 +69,7 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="C:\Users\ARKABR~1\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -80,7 +81,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Arka Brian\Downloads\jsleep.png" />
+                                                <entry key="imagePath" value="C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\Logo.png" />
+                                                <entry key="scalingPercent" value="143" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
