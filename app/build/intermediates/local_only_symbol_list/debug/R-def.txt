@@ -60,7 +60,6 @@ id facilityGymInclude
 id facilityRestaurantInclude
 id facilitySwimmingPoolInclude
 id facilityWifiInclude
-id go
 id includeBalcony
 id includeBathtub
 id includeFridge

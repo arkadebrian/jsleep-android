@@ -29,6 +29,8 @@ public class AboutMeActivity extends AppCompatActivity {
     Context mContext;
     TextView name, username, balance;
 
+    Button topUp;
+
     TextView renterNameRegistered, renterAddressRegistered, renterPhoneRegistered;
     EditText renterName, renterAddress, renterPhone;
 
@@ -42,9 +44,12 @@ public class AboutMeActivity extends AppCompatActivity {
         Button jadiRenter = findViewById(R.id.jadiRegisterRenter);
         Button gaJadi = findViewById(R.id.cancelRegister);
         MotionLayout motionLayout = findViewById(R.id.motionLayout);
+        balance = findViewById(R.id.BalanceData);
         name = findViewById(R.id.NameData);
         username = findViewById(R.id.EmailData);
-        balance = findViewById(R.id.BalanceData);
+
+        balanceTopUp = findViewById(R.id.BalanceShower);
+        topUp = findViewById(R.id.topUpButton);
 
         renterNameRegistered = findViewById(R.id.renterNameData);
         renterAddressRegistered = findViewById(R.id.renterAddressData);
@@ -59,21 +64,13 @@ public class AboutMeActivity extends AppCompatActivity {
         renterPhone = findViewById(R.id.renterPhoneInput);
 
         if(MainActivity.accountGas.renter != null){
-            ((MotionLayout)findViewById(R.id.motionLayout)).transitionToEnd();
-            gaJadi.setVisibility(View.INVISIBLE);
-            jadiRenter.setVisibility(View.INVISIBLE);
-            renterName.setVisibility(View.GONE);
-            renterAddress.setVisibility(View.GONE);
-            renterPhone.setVisibility(View.GONE);
-            renterNameRegistered.setText(MainActivity.accountGas.renter.username);
-            renterAddressRegistered.setText(MainActivity.accountGas.renter.address);
-            renterPhoneRegistered.setText(MainActivity.accountGas.renter.phoneNumber);
-            findViewById(R.id.renterName).setVisibility(View.VISIBLE);
-            findViewById(R.id.renterAddress).setVisibility(View.VISIBLE);
-            findViewById(R.id.renterPhone).setVisibility(View.VISIBLE);
+            ((MotionLayout)findViewById(R.id.motionLayout)).transitionToState(R.id.end_c);
             renterNameRegistered.setVisibility(View.VISIBLE);
             renterAddressRegistered.setVisibility(View.VISIBLE);
             renterPhoneRegistered.setVisibility(View.VISIBLE);
+            renterNameRegistered.setText(MainActivity.accountGas.renter.username);
+            renterAddressRegistered.setText(MainActivity.accountGas.renter.address);
+            renterPhoneRegistered.setText(MainActivity.accountGas.renter.phoneNumber);
         }
         else{
             jadiRenter.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +81,8 @@ public class AboutMeActivity extends AppCompatActivity {
                     }
                     else{
                         Renter renter = requestRenter(renterName.getText().toString(), renterAddress.getText().toString(), renterPhone.getText().toString());
+                        Intent intent = new Intent(AboutMeActivity.this, MainActivity.class);
+                        startActivity(intent);
                     }
 
                 }
@@ -96,6 +95,20 @@ public class AboutMeActivity extends AppCompatActivity {
                 }
             });
         }
+
+        topUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(balanceTopUp.getText().toString().equals("")){
+                    Toast.makeText(mContext, "Please fill the balance", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Double balanceTopUpDouble = Double.parseDouble(balanceTopUp.getText().toString());
+                    Boolean isTopUp = requestTopUp(MainActivity.accountGas.id, balanceTopUpDouble);
+                }
+            }
+        });
 
     }
 
@@ -117,6 +130,35 @@ public class AboutMeActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<Renter> call, Throwable t) {
                 Toast.makeText(mContext, "Register Renter Failed", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return null;
+    }
+
+
+
+    protected Boolean requestTopUp(int id, double balance ){
+        System.out.println("Id: " + id);
+        System.out.println("TopUp: " + balance);
+        mApiService.topUpBalance(id,balance).enqueue(new Callback<Boolean>() {
+            @Override
+            public void onResponse(Call<Boolean> call, Response<Boolean> response) {
+                if(response.isSuccessful()){
+                    Boolean res = response.body();
+                    System.out.println("Top Up Successful") ;
+                    //MainActivity.savedAccount.balance += balance;
+                    MainActivity.reloadAccount(MainActivity.accountGas.id);
+                    Toast.makeText(mContext, "Top Up Successful", Toast.LENGTH_SHORT).show();
+                    Intent move = new Intent(AboutMeActivity.this, AboutMeActivity.class);
+                    startActivity(move);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Boolean> call, Throwable t) {
+                System.out.println("TOPUP ERROR!!");
+                System.out.println(t.toString());
+                Toast.makeText(mContext,"Top Up Failed",Toast.LENGTH_SHORT).show();
             }
         });
         return null;

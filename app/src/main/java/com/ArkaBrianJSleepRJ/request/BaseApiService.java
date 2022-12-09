@@ -14,6 +14,10 @@ import retrofit2.Call;
 import retrofit2.http.*;
 
 public interface BaseApiService {
+
+    @GET("account/{id}")
+    Call<Account> getAccount(@Path("id") int id);
+
     @POST("account/login")
     Call<Account> login(
             @Query("email") String email,
@@ -33,6 +37,12 @@ public interface BaseApiService {
             @Query("username") String username,
             @Query("address") String address,
             @Query("phoneNumber") String phoneNumber
+    );
+
+    @POST("account/{id}/topUp")
+    Call<Boolean> topUpBalance(
+            @Path("id") int id,
+            @Query("balance") double balance
     );
 
     @GET("room/getAllRoom")

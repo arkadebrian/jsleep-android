@@ -30,7 +30,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     public static Account accountGas;
-    BaseApiService mApiService;
+    static BaseApiService mApiService;
     Context mContext;
     EditText page;
     ListView listView;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         mContext = this;
         prev = findViewById(R.id.prev);
         next = findViewById(R.id.next);
-        go = findViewById(R.id.go);
+
         page = findViewById(R.id.pageInput);
 
 
@@ -158,15 +158,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Log.i("HelloListView", "You clicked Item: " + id + " at position:" + position);
-        // Then you start a new Activity via Intent
         Intent intent = new Intent();
         intent.setClass(this, RoomDetailsActivity.class);
         RoomDetailsActivity.selectedRoom = temp.get(position);
-        intent.putExtra("position", position);
-        // Or / And
-        intent.putExtra("id", id);
         startActivity(intent);
+    }
+
+    protected static Account reloadAccount(int id){
+        mApiService.getAccount(id).enqueue(new Callback<Account>() {
+            @Override
+            public void onResponse(Call<Account> call, Response<Account> response) {
+                if (response.isSuccessful())
+                    accountGas = response.body();
+            }
+            @Override
+            public void onFailure(Call<Account> call, Throwable t) {
+                t.printStackTrace();
+            }
+        });
+        return null;
     }
 
 }
