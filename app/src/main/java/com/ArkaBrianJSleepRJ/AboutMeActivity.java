@@ -18,6 +18,8 @@ import com.ArkaBrianJSleepRJ.model.Renter;
 import com.ArkaBrianJSleepRJ.request.BaseApiService;
 import com.ArkaBrianJSleepRJ.request.UtilsApi;
 
+import java.util.Date;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -43,6 +45,8 @@ public class AboutMeActivity extends AppCompatActivity {
 
         Button jadiRenter = findViewById(R.id.jadiRegisterRenter);
         Button gaJadi = findViewById(R.id.cancelRegister);
+        Button OrderList = findViewById(R.id.OrderListButton);
+
         MotionLayout motionLayout = findViewById(R.id.motionLayout);
         balance = findViewById(R.id.BalanceData);
         name = findViewById(R.id.NameData);
@@ -107,6 +111,14 @@ public class AboutMeActivity extends AppCompatActivity {
                     Double balanceTopUpDouble = Double.parseDouble(balanceTopUp.getText().toString());
                     Boolean isTopUp = requestTopUp(MainActivity.accountGas.id, balanceTopUpDouble);
                 }
+            }
+        });
+
+        OrderList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AboutMeActivity.this, OrderListActivity.class);
+                startActivity(intent);
             }
         });
 

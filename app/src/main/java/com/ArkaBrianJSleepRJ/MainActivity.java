@@ -28,11 +28,14 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
     public static Account accountGas;
+    static ArrayList<Room> rooms = new ArrayList<>();
+    static ArrayList<String> RoomsName = new ArrayList<>();
+
     static BaseApiService mApiService;
     Context mContext;
     EditText page;
     ListView listView;
-    Button prev, next, go;
+    Button prev, next;
     int currentPage = 0;
 
     ArrayList<Room> acc;
@@ -50,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
         next = findViewById(R.id.next);
 
         page = findViewById(R.id.pageInput);
-
 
         listView = findViewById(R.id.listViewer);
         listView.setOnItemClickListener(this::onItemClick);

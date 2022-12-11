@@ -31,6 +31,7 @@ id IncludeAC
 id NameCategory
 id NameData
 id OrderButton
+id OrderListButton
 id PayButton
 id Price
 id PriceField
@@ -52,6 +53,7 @@ id button
 id button2
 id button3
 id button4
+id button5
 id button6
 id cancelCreateRoomButton
 id cancelRegister
@@ -121,6 +123,7 @@ id roomPriceInput
 id roomSizeInput
 id search_button
 id start
+id textView
 id textView4
 id textView5
 id titleBedType
@@ -135,6 +138,7 @@ layout activity_about_me
 layout activity_create_room
 layout activity_login
 layout activity_main
+layout activity_order_list
 layout activity_register
 layout activity_room_details_and_payment
 menu top_menu

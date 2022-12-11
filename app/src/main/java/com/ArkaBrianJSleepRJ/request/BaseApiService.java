@@ -4,6 +4,7 @@ import com.ArkaBrianJSleepRJ.model.Account;
 import com.ArkaBrianJSleepRJ.model.BedType;
 import com.ArkaBrianJSleepRJ.model.City;
 import com.ArkaBrianJSleepRJ.model.Facility;
+import com.ArkaBrianJSleepRJ.model.Payment;
 import com.ArkaBrianJSleepRJ.model.Price;
 import com.ArkaBrianJSleepRJ.model.Renter;
 import com.ArkaBrianJSleepRJ.model.Room;
@@ -63,7 +64,20 @@ public interface BaseApiService {
             @Query("bedType")BedType bedType
     );
 
-//    @POST("payment/create")
-//    Call<Payment> payment(@Query("buyerId") int buyerId, @Query("renterId") int renterId, @Query("roomId") int roomId, @Query("from") String from, @Query("to") String to);
+    @POST("payment/create")
+    Call<Payment> create(
+            @Query("buyerId") int buyerId,
+            @Query("renterId") int renterId,
+            @Query("roomId") int roomId,
+            @Query("from") String from,
+            @Query("to") String to
+    );
+
+    @GET("payment/getAllOrder/{id}")
+    Call<ArrayList<Payment>> getAllOrder(
+            @Path("id") int renterId,
+            @Query("page") int page,
+            @Query("pageSize") int pageSize
+    );
 
 }

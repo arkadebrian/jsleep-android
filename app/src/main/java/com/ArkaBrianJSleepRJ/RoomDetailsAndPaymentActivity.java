@@ -6,6 +6,7 @@ import androidx.constraintlayout.motion.widget.MotionLayout;
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,11 +17,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ArkaBrianJSleepRJ.model.Facility;
+import com.ArkaBrianJSleepRJ.model.Payment;
 import com.ArkaBrianJSleepRJ.model.Room;
 import com.ArkaBrianJSleepRJ.request.BaseApiService;
 import com.ArkaBrianJSleepRJ.request.UtilsApi;
 
 import java.util.Calendar;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
     TextView roomName, cityFromSpinner, bedTypeFromSpinner;
@@ -124,7 +130,7 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
 
         final Calendar calendar = Calendar.getInstance();
         int day = calendar.get(Calendar.DAY_OF_MONTH);
-        int month = calendar.get(Calendar.MONTH) + 1;
+        int month = calendar.get(Calendar.MONTH);
         int year = calendar.get(Calendar.YEAR);
         FromDateField = findViewById(R.id.FromDateField);
         FromDateField.setOnClickListener(v ->{
@@ -134,8 +140,8 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                FromDateField.setText(day + "-" + month + "-" + year);
-                fromDate = day + "-" + month + "-" + year;
+                FromDateField.setText(year + "-" + (month + 1) + "-" + day);
+                fromDate = year + "-" + (month + 1) + "-" + day;
             }
         }, day, month, year);
 
@@ -147,8 +153,8 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                ToDateField.setText(day + "-" + month + "-" + year);
-                toDate = day + "-" + month + "-" + year;
+                ToDateField.setText(year + "-" + (month + 1) + "-" + day);
+                toDate = year + "-" + (month + 1) + "-" + day;
             }
         }, day, month, year);
 
@@ -175,21 +181,34 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
         PayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                if (MainActivity.accountGas.balance >= selectedRoom.price.price) {
-//                    MainActivity.accountGas.balance -= selectedRoom.price.price;
-//                    MainActivity.accountGas.bookedRoom.add(selectedRoom);
-//                    Toast.makeText(getApplicationContext(), "Payment Success", Toast.LENGTH_SHORT).show();
-//                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                    startActivity(intent);
-//                } else {
-//                    Toast.makeText(getApplicationContext(), "Insufficient Balance", Toast.LENGTH_SHORT).show();
-//                }
-
-                //Check date validity
-
-
-                Toast.makeText(getApplicationContext(), "Payment Button Pressed", Toast.LENGTH_SHORT).show();
+                Payment payment = createPayment(MainActivity.accountGas.id, MainActivity.accountGas.renter.id, selectedRoom.id, FromDateField.getText().toString(), ToDateField.getText().toString());
             }
         });
+    }
+
+    protected Payment createPayment(int buyerId, int renterId, int roomId, String fromDate, String toDate) {
+        System.out.println(buyerId);
+        System.out.println(renterId);
+        System.out.println(roomId);
+        System.out.println(fromDate);
+        System.out.println(toDate);
+        mApiService.create(buyerId, renterId, roomId, fromDate, toDate).enqueue(new Callback<Payment>() {
+            @Override
+            public void onResponse(Call<Payment> call, Response<Payment> response) {
+                if (response.isSuccessful()) {
+                    Payment payment = response.body();
+                    Toast.makeText(getApplicationContext(), "Payment Success", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Payment> call, Throwable t) {
+                System.out.println(t.toString());
+                Toast.makeText(getApplicationContext(), "Payment Failed", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return null;
     }
 }
