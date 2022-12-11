@@ -22,7 +22,11 @@ import com.ArkaBrianJSleepRJ.model.Room;
 import com.ArkaBrianJSleepRJ.request.BaseApiService;
 import com.ArkaBrianJSleepRJ.request.UtilsApi;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -35,11 +39,12 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
     Button order;
     MotionLayout motionLayout;
 
-    TextView PriceView, BalanceView, CurrentBalance, FromDateText, ToDateText, VoucherText;
+    TextView PriceView, BalanceView, FinalPriceView, CurrentBalance, FromDateText, ToDateText, VoucherText;
     EditText FromDateField, ToDateField, VoucherField;
     DatePickerDialog InputFromDate, InputToDate;
-    Button PayButton, CancelButton;
+    Button PayButton, CancelButton, CalculateButton;
 
+    double total;
     public static String fromDate, toDate;
 
     BaseApiService mApiService;
@@ -47,6 +52,7 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
 
     public static Room selectedRoom;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -162,9 +168,12 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
 
         PayButton = findViewById(R.id.PayButton);
         CancelButton = findViewById(R.id.CancelButton);
+        CalculateButton = findViewById(R.id.CalculateButton);
 
         PriceView.setText(String.valueOf(selectedRoom.price.price));
         BalanceView.setText(String.valueOf(MainActivity.accountGas.balance));
+
+        FinalPriceView = findViewById(R.id.FinalPriceView);
 
         order.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -182,6 +191,16 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Payment payment = createPayment(MainActivity.accountGas.id, MainActivity.accountGas.renter.id, selectedRoom.id, FromDateField.getText().toString(), ToDateField.getText().toString());
+            }
+        });
+        CalculateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                double price = selectedRoom.price.price;
+                int days = getDays(FromDateField.getText().toString(), ToDateField.getText().toString());
+                total = price * days;
+                FinalPriceView.setText(String.valueOf(total));
+                motionLayout.transitionToState(R.id.end_c);
             }
         });
     }
@@ -210,5 +229,18 @@ public class RoomDetailsAndPaymentActivity extends AppCompatActivity {
             }
         });
         return null;
+    }
+
+    public int getDays(String fromDate, String toDate) {
+        SimpleDateFormat myFormat = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date date1 = myFormat.parse(fromDate);
+            Date date2 = myFormat.parse(toDate);
+            long diff = date2.getTime() - date1.getTime();
+            return (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }

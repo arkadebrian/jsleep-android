@@ -2519,6 +2519,7 @@ int id BalanceShower 0x7f080005
 int id BalanceView 0x7f08023f
 int id BedField 0x7f08022c
 int id CTRL 0x7f080006
+int id CalculateButton 0x7f080254
 int id CancelButton 0x7f080247
 int id City 0x7f08022d
 int id CityField 0x7f08022e
@@ -2526,6 +2527,8 @@ int id CurrentBalance 0x7f080240
 int id EmailCategory 0x7f080007
 int id EmailData 0x7f080008
 int id FUNCTION 0x7f080009
+int id FinalPriceText 0x7f080255
+int id FinalPriceView 0x7f080256
 int id FromDateField 0x7f080248
 int id FromDateText 0x7f080241
 int id IncludeAC 0x7f08022f
@@ -2649,6 +2652,8 @@ int id button3 0x7f080245
 int id button4 0x7f08024c
 int id button5 0x7f080252
 int id button6 0x7f080070
+int id button7 0x7f080257
+int id button8 0x7f080258
 int id buttonPanel 0x7f080071
 int id cache_measures 0x7f080072
 int id callMeasure 0x7f080073

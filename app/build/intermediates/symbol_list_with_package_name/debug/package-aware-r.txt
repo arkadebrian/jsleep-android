@@ -2520,6 +2520,7 @@ id BalanceShower
 id BalanceView
 id BedField
 id CTRL
+id CalculateButton
 id CancelButton
 id City
 id CityField
@@ -2527,6 +2528,8 @@ id CurrentBalance
 id EmailCategory
 id EmailData
 id FUNCTION
+id FinalPriceText
+id FinalPriceView
 id FromDateField
 id FromDateText
 id IncludeAC
@@ -2650,6 +2653,8 @@ id button3
 id button4
 id button5
 id button6
+id button7
+id button8
 id buttonPanel
 id cache_measures
 id callMeasure

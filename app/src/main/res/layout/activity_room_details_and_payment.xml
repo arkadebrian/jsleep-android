@@ -346,10 +346,10 @@
         tools:layout_editor_absoluteY="243dp" />
 
     <Button
-        android:id="@+id/PayButton"
+        android:id="@+id/CalculateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pay"
+        android:text="Calculate"
         tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="560dp" />
 
@@ -429,6 +429,35 @@
         android:textSize="24sp"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/FinalPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Final Price"
+        android:textColor="#CCCCCC"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <TextView
+        android:id="@+id/FinalPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="#CCCCCC"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="356dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <Button
+        android:id="@+id/PayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="575dp" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
