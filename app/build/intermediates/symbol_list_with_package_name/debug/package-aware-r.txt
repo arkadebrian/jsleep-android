@@ -2517,21 +2517,28 @@ id BOTTOM_START
 id BalanceCategory
 id BalanceData
 id BalanceShower
+id BalanceView
 id BedField
 id CTRL
+id CancelButton
 id City
 id CityField
+id CurrentBalance
 id EmailCategory
 id EmailData
 id FUNCTION
+id FromDateField
+id FromDateText
 id IncludeAC
 id META
 id NO_DEBUG
 id NameCategory
 id NameData
 id OrderButton
+id PayButton
 id Price
 id PriceField
+id PriceView
 id RoomDetails
 id RoomName
 id SHIFT
@@ -2543,6 +2550,10 @@ id Size
 id SizeField
 id TOP_END
 id TOP_START
+id ToDateField
+id ToDateText
+id VoucherField
+id VoucherText
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2634,6 +2645,8 @@ id bounceEnd
 id bounceStart
 id button
 id button2
+id button3
+id button4
 id button6
 id buttonPanel
 id cache_measures
@@ -2716,6 +2729,9 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextEmailAddress
+id editTextTextEmailAddress2
+id editTextTextPersonName
 id edit_query
 id elastic
 id emailCategory2
@@ -2748,6 +2764,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id fromDateText
 id frost
 id ghost_view
 id ghost_view_holder
@@ -3027,6 +3044,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView4
 id textView5
 id text_input_end_icon
 id text_input_error_icon
@@ -3172,9 +3190,8 @@ layout activity_about_me
 layout activity_create_room
 layout activity_login
 layout activity_main
-layout activity_payment
 layout activity_register
-layout activity_room_details
+layout activity_room_details_and_payment
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4569,6 +4586,7 @@ styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
 xml activity_about_me_scene
+xml activity_room_details_scene
 xml backup_rules
 xml data_extraction_rules
 xml network_security_config

@@ -63,4 +63,7 @@ public interface BaseApiService {
             @Query("bedType")BedType bedType
     );
 
+//    @POST("payment/create")
+//    Call<Payment> payment(@Query("buyerId") int buyerId, @Query("renterId") int renterId, @Query("roomId") int roomId, @Query("from") String from, @Query("to") String to);
+
 }

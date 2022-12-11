@@ -2516,21 +2516,28 @@ int id BOTTOM_START 0x7f080002
 int id BalanceCategory 0x7f080003
 int id BalanceData 0x7f080004
 int id BalanceShower 0x7f080005
+int id BalanceView 0x7f08023f
 int id BedField 0x7f08022c
 int id CTRL 0x7f080006
+int id CancelButton 0x7f080247
 int id City 0x7f08022d
 int id CityField 0x7f08022e
+int id CurrentBalance 0x7f080240
 int id EmailCategory 0x7f080007
 int id EmailData 0x7f080008
 int id FUNCTION 0x7f080009
+int id FromDateField 0x7f080248
+int id FromDateText 0x7f080241
 int id IncludeAC 0x7f08022f
 int id META 0x7f08000a
 int id NO_DEBUG 0x7f08000b
 int id NameCategory 0x7f08000c
 int id NameData 0x7f08000d
 int id OrderButton 0x7f080230
+int id PayButton 0x7f080242
 int id Price 0x7f080231
 int id PriceField 0x7f080232
+int id PriceView 0x7f080243
 int id RoomDetails 0x7f080233
 int id RoomName 0x7f080229
 int id SHIFT 0x7f08000e
@@ -2542,6 +2549,10 @@ int id Size 0x7f080234
 int id SizeField 0x7f080235
 int id TOP_END 0x7f080013
 int id TOP_START 0x7f080014
+int id ToDateField 0x7f080249
+int id ToDateText 0x7f080244
+int id VoucherField 0x7f08024a
+int id VoucherText 0x7f08024b
 int id accelerate 0x7f080015
 int id accessibility_action_clickable_span 0x7f080016
 int id accessibility_custom_action_0 0x7f080017
@@ -2633,6 +2644,8 @@ int id bounceEnd 0x7f08006c
 int id bounceStart 0x7f08006d
 int id button 0x7f08006e
 int id button2 0x7f08006f
+int id button3 0x7f080245
+int id button4 0x7f08024c
 int id button6 0x7f080070
 int id buttonPanel 0x7f080071
 int id cache_measures 0x7f080072
@@ -2715,6 +2728,9 @@ int id easeIn 0x7f0800bd
 int id easeInOut 0x7f0800be
 int id easeOut 0x7f0800bf
 int id east 0x7f0800c0
+int id editTextTextEmailAddress 0x7f08024d
+int id editTextTextEmailAddress2 0x7f08024e
+int id editTextTextPersonName 0x7f08024f
 int id edit_query 0x7f0800c1
 int id elastic 0x7f0800c2
 int id emailCategory2 0x7f0800c3
@@ -2747,6 +2763,7 @@ int id flip 0x7f0800dd
 int id floating 0x7f0800de
 int id forever 0x7f0800df
 int id fragment_container_view_tag 0x7f0800e0
+int id fromDateText 0x7f080246
 int id frost 0x7f0800e1
 int id ghost_view 0x7f0800e2
 int id ghost_view_holder 0x7f0800e3
@@ -3026,6 +3043,7 @@ int id textSpacerNoButtons 0x7f0801ee
 int id textSpacerNoTitle 0x7f0801ef
 int id textStart 0x7f0801f0
 int id textTop 0x7f0801f1
+int id textView4 0x7f080250
 int id textView5 0x7f08023e
 int id text_input_end_icon 0x7f0801f2
 int id text_input_error_icon 0x7f0801f3
@@ -3171,9 +3189,8 @@ int layout activity_about_me 0x7f0b001c
 int layout activity_create_room 0x7f0b001d
 int layout activity_login 0x7f0b001e
 int layout activity_main 0x7f0b001f
-int layout activity_payment 0x7f0b0079
 int layout activity_register 0x7f0b0020
-int layout activity_room_details 0x7f0b0078
+int layout activity_room_details_and_payment 0x7f0b007a
 int layout custom_dialog 0x7f0b0021
 int layout design_bottom_navigation_item 0x7f0b0022
 int layout design_bottom_sheet_dialog 0x7f0b0023
@@ -6365,6 +6382,7 @@ int styleable ViewTransition_viewTransitionMode 14
 int[] styleable include { 0x7f030101 }
 int styleable include_constraintSet 0
 int xml activity_about_me_scene 0x7f120000
+int xml activity_room_details_scene 0x7f120009
 int xml backup_rules 0x7f120001
 int xml data_extraction_rules 0x7f120002
 int xml network_security_config 0x7f120003

@@ -29,17 +29,6 @@
             android:text="Prev"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/next"
-            android:layout_width="216dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:backgroundTint="#7D31C8"
-            android:insetLeft="5dp"
-            android:insetRight="5dp"
-            android:text="Next"
-            android:textStyle="bold" />
-
         <EditText
             android:id="@+id/pageInput"
             android:layout_width="180dp"
@@ -52,6 +41,17 @@
             android:textAlignment="center"
             android:textColor="#CCCCCC"
             android:textColorHint="#CCCCCC" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="216dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7D31C8"
+            android:insetLeft="5dp"
+            android:insetRight="5dp"
+            android:text="Next"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,7 +21,6 @@ import com.ArkaBrianJSleepRJ.request.BaseApiService;
 import com.ArkaBrianJSleepRJ.request.UtilsApi;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -159,8 +157,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intent = new Intent();
-        intent.setClass(this, RoomDetailsActivity.class);
-        RoomDetailsActivity.selectedRoom = temp.get(position);
+        intent.setClass(this, RoomDetailsAndPaymentActivity.class);
+        RoomDetailsAndPaymentActivity.selectedRoom = temp.get(position);
         startActivity(intent);
     }
 

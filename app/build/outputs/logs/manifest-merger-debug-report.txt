@@ -114,12 +114,12 @@ ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum
 		ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:22:17-33
 	android:name
 		ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:21:17-52
-activity#com.ArkaBrianJSleepRJ.RoomDetailsActivity
+activity#com.ArkaBrianJSleepRJ.RoomDetailsAndPaymentActivity
 ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:exported
 		ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:25:13-48
+		ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:25:13-58
 activity#com.ArkaBrianJSleepRJ.CreateRoomActivity
 ADDED from C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:31:9-37:20
 	android:exported

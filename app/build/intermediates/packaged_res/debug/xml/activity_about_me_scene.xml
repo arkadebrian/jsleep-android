@@ -583,7 +583,7 @@
     </ConstraintSet>
     <ConstraintSet android:id="@+id/end_c" >
         <Constraint
-            motion:layout_constraintVertical_bias="0.109"
+            motion:layout_constraintVertical_bias="0.093"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:id="@+id/accountDetails"
@@ -592,7 +592,7 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            motion:layout_constraintVertical_bias="0.977"
+            motion:layout_constraintVertical_bias="0.92"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:id="@+id/titleJsleepKecil"
@@ -602,12 +602,12 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            motion:layout_constraintVertical_bias="0.152"
+            motion:layout_constraintVertical_bias="0.186"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:id="@+id/NameData"
             android:layout_height="29dp"
-            motion:layout_constraintHorizontal_bias="0.805"
+            motion:layout_constraintHorizontal_bias="0.866"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
@@ -622,12 +622,12 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            motion:layout_constraintVertical_bias="0.229"
+            motion:layout_constraintVertical_bias="0.27"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:id="@+id/EmailData"
             android:layout_height="29dp"
-            motion:layout_constraintHorizontal_bias="0.751"
+            motion:layout_constraintHorizontal_bias="0.866"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
@@ -652,12 +652,12 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            motion:layout_constraintVertical_bias="0.311"
+            motion:layout_constraintVertical_bias="0.35"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:id="@+id/BalanceData"
             android:layout_height="29dp"
-            motion:layout_constraintHorizontal_bias="0.836"
+            motion:layout_constraintHorizontal_bias="0.866"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
@@ -850,7 +850,7 @@
             android:layout_width="85dp"
             android:id="@+id/renterName" />
         <Constraint
-            motion:layout_constraintVertical_bias="0.736"
+            motion:layout_constraintVertical_bias="0.764"
             android:layout_height="29dp"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
@@ -861,7 +861,7 @@
             android:id="@+id/renterPhoneData"
             android:visibility="visible" />
         <Constraint
-            motion:layout_constraintVertical_bias="0.619"
+            motion:layout_constraintVertical_bias="0.66"
             android:layout_height="29dp"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
@@ -872,7 +872,7 @@
             android:id="@+id/renterAddressData"
             android:visibility="visible" />
         <Constraint
-            motion:layout_constraintVertical_bias="0.522"
+            motion:layout_constraintVertical_bias="0.564"
             android:layout_height="29dp"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"

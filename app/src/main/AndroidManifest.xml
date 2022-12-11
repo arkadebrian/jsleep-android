@@ -22,7 +22,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".RoomDetailsActivity"
+            android:name=".RoomDetailsAndPaymentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

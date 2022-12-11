@@ -51,8 +51,8 @@
 31        </activity>
 32        <activity
 32-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:24:9-30:20
-33            android:name="com.ArkaBrianJSleepRJ.RoomDetailsActivity"
-33-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:25:13-48
+33            android:name="com.ArkaBrianJSleepRJ.RoomDetailsAndPaymentActivity"
+33-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:25:13-58
 34            android:exported="false" >
 34-->C:\Users\Arka Brian\Documents\Arka\Kuliah\UI\Semester 3\OOP\Praktikum\jsleep-android\app\src\main\AndroidManifest.xml:26:13-37
 35            <meta-data

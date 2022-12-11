@@ -96,12 +96,12 @@
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\layout_activity_payment.xml.flat",
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\layout\\activity_payment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\drawable_ic_baseline_search_24.xml.flat",
@@ -120,16 +120,20 @@
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\layout\\activity_room.xml"
     },
     {
+        "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\xml_activity_room_details_scene.xml.flat",
+        "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\xml\\activity_room_details_scene.xml"
+    },
+    {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -140,12 +144,8 @@
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.ArkaBrianJSleepRJ.app-merged_res-25:/xml_activity_about_me_scene.xml.flat",
-        "source": "com.ArkaBrianJSleepRJ.app-main-27:/xml/activity_about_me_scene.xml"
-    },
-    {
-        "merged": "com.ArkaBrianJSleepRJ.app-merged_res-25:/layout_activity_about_me.xml.flat",
-        "source": "com.ArkaBrianJSleepRJ.app-main-27:/layout/activity_about_me.xml"
+        "merged": "com.ArkaBrianJSleepRJ.app-merged_res-25:/layout_activity_room_details_and_payment.xml.flat",
+        "source": "com.ArkaBrianJSleepRJ.app-main-27:/layout/activity_room_details_and_payment.xml"
     },
     {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -160,12 +160,12 @@
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-debug-26:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-debug-26:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-main-27:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Arka Brian\\.gradle\\daemon\\7.4\\com.ArkaBrianJSleepRJ.app-merged_res-25:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
